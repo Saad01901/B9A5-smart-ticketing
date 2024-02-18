@@ -1,19 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>P-Ticket</title>
+    <!-- tailwind and Daisy ui -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="styles/font-style.css">
 </head>
-<body>
+<body class="raleway" >
     <header>
-        <section></section>
-    </header>
-    <main>
-        <section></section>
+        <!-- navbar starts -->
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a>Home</a></li>
+                      <li><a>About</a></li>
+                      <li><a>Destination</a></li>
+                      <li><a>Search</a></li>
+                    </ul>
+                  </div>
+                  <a class=" text-4xl font-extrabold text-center">P-Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Destination</a></li>
+                    <li><a>Search</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end ">
+                  <a class="btn inter bg-[#1DD1001A] text-green-500">Bus <span><img src="/resourses/bus-icon.png" alt=""></span> </a>
+                </div>
+              </div>
+        </nav>
+        <!-- navbar ends -->
+        <section class=" flex justify-center items-center min-h-screen bg-center bg-cover bg-[url(resourses/banner.png)] bg-no-repeat ">
+           <div class="   w-[760px] h-96 space-y-2">
+                <h1 class="  text-6xl text-white text-center font-extrabold    " >End-to-End Travel with <br> <span class=" text-green-600"> P Paribahan </span></h1>
+                <p class=" text-center text-white text-lg">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+                <button class="btn ml-72 p-3 bg-green-500 border-none font-bold" >Buy Tickets</button>
+            </div>
+        </section>
+    </header >
+    <main class=>
+        <section class=" my-14">
+            <h1 class=" text-5xl font-bold text-center my-12">Best offers for you</h1>
+            <div class=" flex justify-around ">
+                <div class=" w-[573px] h-56 bg-[#FFBF0F] rounded-3xl flex justify-around items-center">
+                  <div class="">
+                  <p> <span class="text-5xl font-bold " >15% OFF</span> <br>
+                    on your next purchase
+                    use by <br> January 2024</p></div>
+                    <div><img class=" w-12 h-56" src="/resourses/info-devider.png" alt=""></div>
+                    <div>
+                    <p> <span class="text-4xl font-bold " >NEW15</span> <br>
+                      Coupon Codes</p>
+                    </div>
+                </div>
+                <div class=" w-[573px] h-56 bg-[#F78C9C] rounded-3xl flex justify-around items-center">
+                  <div class="">
+                  <p> <span class="text-5xl font-bold " >20% OFF</span> <br>
+                    on your next purchase
+                    use by <br> January 2024</p></div>
+                    <div><img class=" w-12 h-56" src="/resourses/info-devider.png" alt=""></div>
+                    <div>
+                    <p> <span class="text-4xl font-bold " >Couple20</span> <br>
+                      Coupon Codes</p>
+                    </div>
+                </div>                  
+            </div >
+            <div class=" flex justify-center items-center">
+              <button class=" btn bg-white border-lime-500 text-green-400 px-6 mt-8 ">See All Offers</button>
+            </div>
+        </section>
     </main>
     <footer>
 
